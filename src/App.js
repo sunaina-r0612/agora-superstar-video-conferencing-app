@@ -10,11 +10,7 @@ function App() {
       {inCall ? (
         <VideoCall setInCall={setInCall} />
       ) : (
-        <Button
-          variant="contained"
-          color="primary"
-          onClick={() => setInCall(true)}
-        >
+        <Button variant="contained" color="primary" onClick={() => setInCall(true)}>
           Join Call
         </Button>
       )}

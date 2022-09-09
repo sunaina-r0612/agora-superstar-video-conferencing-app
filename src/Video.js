@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 
 export default function Video(props) {
   const { users, tracks } = props;
-  const [gridSpacing, setGridSpacing] = useState(20);
+  const [gridSpacing, setGridSpacing] = useState(12);
 
   useEffect(() => {
-    setGridSpacing(Math.max(Math.floor(20 / (users.length + 1)), 4));
+    setGridSpacing(Math.max(Math.floor(12 / (users.length + 1)), 5));
   }, [users, tracks]);
 
   return (
